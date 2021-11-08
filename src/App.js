@@ -48,18 +48,17 @@ function App() {
     <section id="app">
       <section id="moments">
         <div className="tuck-rule">
-          <h4
+          <div
+            className="years-title"
             onMouseEnter={() => setIsShown(true)}
             onMouseLeave={() => setIsShown(false)}
-            setInterval={() => setIsShown(7)}
           >
             2000
-          </h4>
+          </div>
           {isShown && (
             <div
               onMouseEnter={() => setIsShown(true)}
               onMouseLeave={() => setIsShown(false)}
-              setInterval={() => setIsShown(7)}
               className="show-page"
             >
               <p>Gannon Hurt</p>
@@ -74,12 +73,13 @@ function App() {
         </div>
 
         <div className="super-bowl">
-          <h4
+          <div
+            className="years-title"
             onMouseEnter={() => setIsShown1(true)}
             onMouseLeave={() => setIsShown1(false)}
           >
             2001
-          </h4>
+          </div>
           {isShown1 && (
             <div
               onMouseEnter={() => setIsShown1(true)}
@@ -97,12 +97,13 @@ function App() {
         </div>
 
         <div className="super-bowl1">
-          <h4
+          <div
+            className="years-title"
             onMouseEnter={() => setIsShown2(true)}
             onMouseLeave={() => setIsShown2(false)}
           >
             2002
-          </h4>
+          </div>
           {isShown2 && (
             <div
               onMouseEnter={() => setIsShown2(true)}
@@ -133,12 +134,13 @@ function App() {
       </section>
       <section id="moments-middle">
         <div className="dog-shit1">
-          <h4
+          <div
+            className="years-title"
             onMouseEnter={() => setIsShown3(true)}
             onMouseLeave={() => setIsShown3(false)}
           >
             2003-2015
-          </h4>
+          </div>
           {isShown3 && (
             <div
               onMouseEnter={() => setIsShown3(true)}
@@ -168,12 +170,13 @@ function App() {
           </p>
         </div>
         <div className="dog-shit1">
-          <h4
+          <div
+            className="years-title"
             onMouseEnter={() => setIsShown4(true)}
             onMouseLeave={() => setIsShown4(false)}
           >
             2016
-          </h4>
+          </div>
           {isShown4 && (
             <div
               onMouseEnter={() => setIsShown4(true)}
@@ -195,13 +198,14 @@ function App() {
       </section>
       <section id="moments-bottom">
         <div className="tuck-rule">
-          <h4
+          <div
+            className="years-title"
             onMouseEnter={() => setIsShown5(true)}
             onMouseLeave={() => setIsShown5(false)}
-            className="black"
+            // className="black"
           >
             2018
-          </h4>
+          </div>
           {isShown5 && (
             <div
               onMouseEnter={() => setIsShown5(true)}
@@ -233,12 +237,13 @@ function App() {
         </div> */}
 
         <div className="super-bowl1">
-          <h4
+          <div
+            className="years-title"
             onMouseEnter={() => setIsShown6(true)}
             onMouseLeave={() => setIsShown6(false)}
           >
             2020
-          </h4>
+          </div>
           {isShown6 && (
             <div
               onMouseEnter={() => setIsShown6(true)}
@@ -256,13 +261,13 @@ function App() {
           )}
         </div>
         <div className="dog-shit">
-          <h4
+          <div
+            className="years-title"
             onMouseEnter={() => setIsShown7(true)}
             onMouseLeave={() => setIsShown7(false)}
-            className="black"
           >
             2021
-          </h4>
+          </div>
           {isShown7 && (
             <div
               onMouseEnter={() => setIsShown7(true)}
