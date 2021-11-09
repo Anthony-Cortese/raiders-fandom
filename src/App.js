@@ -28,6 +28,7 @@ function App() {
   var days = Math.ceil(difference / (1000 * 3600 * 24));
   var minutes = Math.abs(Math.round(differenceMinutes));
   console.log(date + " a Raiders fan");
+  console.log(min + " a Raiders fan");
 
   useEffect(() => {
     const interval = setInterval(() => setTime(seconds), 1000);
