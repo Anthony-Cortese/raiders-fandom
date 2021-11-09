@@ -43,11 +43,11 @@ h4:hover {
 }
 
 p {
-  font-size: 18px;
+  font-size: 14px;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-family: 'Ephesis', cursive;
   color: #fff;
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
@@ -78,6 +78,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   /* border: 2px solid red; */
   /* align-items: flex-end; */
   /* position: absolute; */
@@ -117,6 +118,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   /* align-items: flex-end; */
 }
 .my-facts {
@@ -124,7 +126,7 @@ h1 {
   /* color: rgb(255, 251, 0); */
   text-align: center;
   position: relative;
-  bottom: 12rem;
+  bottom: 4rem;
   
 }
 
@@ -196,7 +198,7 @@ h1 {
 
 .super-bowl {
   height: 75%;
-  width: 20%;
+  width: 25%;
   /* border: 2px solid silver; */
   position: relative;
   color: silver;
@@ -208,7 +210,7 @@ h1 {
 
 .super-bowl1 {
   height: 75%;
-  width: 20%;
+  width: 25%;
   /* border: 2px solid silver; */
   position: relative;
   color: silver;
@@ -220,7 +222,7 @@ h1 {
 
 .dog-shit {
   height: 75%;
-  width: 20%;
+  width: 25%;
   /* border: 2px solid silver; */
   position: relative;
   color: silver;
@@ -232,7 +234,7 @@ h1 {
 
 .dog-shit1 {
   height: 80%;
-  width: 20%;
+  width: 25%;
   /* border: 2px solid silver; */
   position: relative;
   color: silver;
@@ -244,6 +246,16 @@ h1 {
 
 .black {
   color: black
+}
+
+@media (max-width: 900px) {
+  .years-title {
+    display: none;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
 }
 
 
