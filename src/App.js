@@ -4,6 +4,7 @@ import "./App.css";
 function App() {
   const [time, setTime] = useState("");
   const [date, setDate] = useState("");
+  const [min, setMin] = useState("");
   const [isShown, setIsShown] = useState(false);
   const [isShown1, setIsShown1] = useState(false);
   const [isShown2, setIsShown2] = useState(false);
@@ -21,8 +22,11 @@ function App() {
   var date1 = new Date("9/07/1997");
   var date2 = new Date();
   var difference = date2.getTime() - date1.getTime();
+  var differenceMin = difference / 1000;
+  var differenceMinutes = differenceMin / 60;
 
   var days = Math.ceil(difference / (1000 * 3600 * 24));
+  var minutes = Math.abs(Math.round(differenceMinutes));
   console.log(date + " a Raiders fan");
 
   useEffect(() => {
@@ -31,6 +35,13 @@ function App() {
       clearInterval(interval);
     };
   }, [seconds]);
+
+  useEffect(() => {
+    const interval = setInterval(() => setMin(minutes), 60000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, [minutes]);
 
   useEffect(() => {
     const interval = setInterval(() => setDate(days) + 1);
@@ -162,6 +173,9 @@ function App() {
           <h1 className="my-facts">I have been a Raiders fan for </h1>
           <p className="my-facts">
             <p className="total-seconds">{seconds} seconds</p>{" "}
+          </p>
+          <p className="my-facts">
+            <p className="total-seconds">{minutes} minutes</p>{" "}
           </p>
           <p className="my-facts">
             <p className="total-days">{days} days</p>{" "}
