@@ -27,6 +27,9 @@ function App() {
 
   var days = Math.ceil(difference / (1000 * 3600 * 24));
   var minutes = Math.abs(Math.round(differenceMinutes));
+
+  var n = 34523453.345;
+  console.log(n.toLocaleString());
   console.log(date + " a Raiders fan");
   console.log(min + " a Raiders fan");
 
@@ -173,10 +176,12 @@ function App() {
         <div className="raider-facts">
           <h1 className="my-facts">I have been a Raiders fan for </h1>
           <p className="my-facts">
-            <p className="total-seconds">{seconds} seconds</p>{" "}
+            <h1 className="total-seconds">
+              {seconds.toLocaleString()} seconds
+            </h1>{" "}
           </p>
           <p className="my-facts">
-            <p className="total-seconds">{minutes} minutes</p>{" "}
+            <p className="total-seconds">{minutes.toLocaleString()} minutes</p>{" "}
           </p>
           <p className="my-facts">
             <p className="total-days">{days} days</p>{" "}
