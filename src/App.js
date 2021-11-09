@@ -16,13 +16,14 @@ function App() {
   var seconds1 = new Date("9/07/1997");
   var seconds2 = new Date();
   var seconds = Math.floor(seconds2 - seconds1) / 1000;
-  console.log(seconds + " a Raiders fan");
+  console.log(time + " a Raiders fan");
 
   var date1 = new Date("9/07/1997");
   var date2 = new Date();
   var difference = date2.getTime() - date1.getTime();
 
   var days = Math.ceil(difference / (1000 * 3600 * 24));
+  console.log(date + " a Raiders fan");
 
   useEffect(() => {
     const interval = setInterval(() => setTime(seconds), 1000);
@@ -36,7 +37,7 @@ function App() {
     return () => {
       clearInterval(interval);
     };
-  }, []);
+  }, [days]);
 
   var year1 = "1997";
 
